@@ -34,15 +34,6 @@ export function onCloseModal() {
 }
 
 //само удаление src
-function deleteImgSrc() {
+export function deleteImgSrc() {
   variables.modalImgEl.src = "";
 }
-
-// экспорт функций
-export default {
-  onEscapeKeyPress,
-  onModalBtnClosePress,
-  onBackdropClickClose,
-  onCloseModal,
-  deleteImgSrc,
-};

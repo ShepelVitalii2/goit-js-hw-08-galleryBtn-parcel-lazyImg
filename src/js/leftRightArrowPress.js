@@ -26,9 +26,3 @@ export function onLeftArrowPress(event) {
     variables.modalImgEl.src = sources[indexImg - 1];
   }
 }
-
-//экспорт функций
-export default {
-  onRightArrowPress,
-  onLeftArrowPress,
-};

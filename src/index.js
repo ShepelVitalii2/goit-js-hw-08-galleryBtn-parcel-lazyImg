@@ -1,7 +1,3 @@
 // import lazySizes from "/lazysizes";
 
-import {
-  createImageCardMockup,
-  createImageCard,
-  LazyImgCheckToInstall,
-} from "./js/createImgCardMockup";
+import { createImageCardMockup } from "./js/createImgCardMockup";
