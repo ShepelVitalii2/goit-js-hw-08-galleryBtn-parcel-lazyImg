@@ -1,4 +1,4 @@
-import images from "./gallery-items.js";
+import images from "./gallery-items";
 import variables from "./variables";
 
 // создаем разметку
