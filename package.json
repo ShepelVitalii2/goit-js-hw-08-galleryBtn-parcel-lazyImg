@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "joi": "^17.2.1",
+    "lazysizes": "^5.2.2",
     "shortid": "^2.2.15"
   },
   "devDependencies": {
