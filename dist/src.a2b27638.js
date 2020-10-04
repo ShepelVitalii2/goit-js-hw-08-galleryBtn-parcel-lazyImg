@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/lazysizes/lazysizes.js":[function(require,module,exports) {
+})({"node_modules/lazysizes/lazysizes.js":[function(require,module,exports) {
 (function(window, factory) {
 	var lazySizes = factory(window, window.document, Date);
 	window.lazySizes = lazySizes;
@@ -873,7 +873,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 }
 ));
 
-},{}],"js/gallery-items.js":[function(require,module,exports) {
+},{}],"src/js/gallery-items.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1170,7 +1170,7 @@ var _default = [{
   description: "Lighthouse Coast Sea"
 }];
 exports.default = _default;
-},{}],"js/leftRightArrowPress.js":[function(require,module,exports) {
+},{}],"src/js/leftRightArrowPress.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1228,7 +1228,7 @@ var _default = {
   onLeftArrowPress: onLeftArrowPress
 };
 exports.default = _default;
-},{"./gallery-items.js":"js/gallery-items.js","./variables":"js/variables.js"}],"js/close-options.js":[function(require,module,exports) {
+},{"./gallery-items.js":"src/js/gallery-items.js","./variables":"src/js/variables.js"}],"src/js/close-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1291,7 +1291,7 @@ var _default = {
   deleteImgSrc: deleteImgSrc
 };
 exports.default = _default;
-},{"./variables":"js/variables.js","./leftRightArrowPress":"js/leftRightArrowPress.js"}],"js/onOpenGalleryContainerClick.js":[function(require,module,exports) {
+},{"./variables":"src/js/variables.js","./leftRightArrowPress":"src/js/leftRightArrowPress.js"}],"src/js/onOpenGalleryContainerClick.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1329,7 +1329,7 @@ function onOpenGalleryContainerClick(evt) {
 
   _variables.default.modalImgEl.setAttribute("alt", originImgAlt);
 }
-},{"./variables":"js/variables.js","./close-options":"js/close-options.js","./leftRightArrowPress":"js/leftRightArrowPress.js"}],"js/variables.js":[function(require,module,exports) {
+},{"./variables":"src/js/variables.js","./close-options":"src/js/close-options.js","./leftRightArrowPress":"src/js/leftRightArrowPress.js"}],"src/js/variables.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1359,7 +1359,7 @@ var _default = {
   modalCloseBtnEl: modalCloseBtnEl
 };
 exports.default = _default;
-},{"./close-options":"js/close-options.js","./onOpenGalleryContainerClick":"js/onOpenGalleryContainerClick.js"}],"js/createImgCardMockup.js":[function(require,module,exports) {
+},{"./close-options":"src/js/close-options.js","./onOpenGalleryContainerClick":"src/js/onOpenGalleryContainerClick.js"}],"src/js/createImgCardMockup.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1409,7 +1409,7 @@ _variables.default.galleryContainer.insertAdjacentHTML("beforeend", imageCard); 
 //   script.crossOrigin = "anonymous";
 //   document.body.appendChild(script);
 // }
-},{"./gallery-items.js":"js/gallery-items.js","./variables":"js/variables.js"}],"index.js":[function(require,module,exports) {
+},{"./gallery-items.js":"src/js/gallery-items.js","./variables":"src/js/variables.js"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _lazysizes = _interopRequireDefault(require("lazysizes"));
@@ -1417,7 +1417,7 @@ var _lazysizes = _interopRequireDefault(require("lazysizes"));
 var _createImgCardMockup = require("./js/createImgCardMockup");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"lazysizes":"../node_modules/lazysizes/lazysizes.js","./js/createImgCardMockup":"js/createImgCardMockup.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"lazysizes":"node_modules/lazysizes/lazysizes.js","./js/createImgCardMockup":"src/js/createImgCardMockup.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1445,7 +1445,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58925" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58947" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1621,5 +1621,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
+//# sourceMappingURL=/src.a2b27638.js.map
