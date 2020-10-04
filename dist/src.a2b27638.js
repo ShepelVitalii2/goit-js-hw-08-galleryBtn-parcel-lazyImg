@@ -611,7 +611,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.createImageCardMockup = createImageCardMockup;
 
-var _galleryItems = _interopRequireDefault(require("./gallery-items.js"));
+var _galleryItems = _interopRequireDefault(require("./gallery-items"));
 
 var _variables = _interopRequireDefault(require("./variables"));
 
@@ -653,7 +653,7 @@ if ("lazyloading" in HTMLImageElement.prototype) {
   script.crossOrigin = "anonymous";
   document.body.appendChild(script);
 }
-},{"./gallery-items.js":"src/js/gallery-items.js","./variables":"src/js/variables.js"}],"src/index.js":[function(require,module,exports) {
+},{"./gallery-items":"src/js/gallery-items.js","./variables":"src/js/variables.js"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _createImgCardMockup = require("./js/createImgCardMockup");
