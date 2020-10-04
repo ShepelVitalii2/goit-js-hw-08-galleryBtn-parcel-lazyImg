@@ -1,4 +1,5 @@
 // import lazySizes from "/lazysizes";
+import variables from "./variables";
 
 import createImageCardMockup from "./js/createImgCardMockup";
 
