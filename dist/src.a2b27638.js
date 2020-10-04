@@ -639,14 +639,7 @@ _variables.default.galleryContainer.insertAdjacentHTML("beforeend", imageCard); 
 //   evt.target.classList.add("appear");
 // }
 //******************** Условие на проверку наличия ленивой загрузки. если нету, вешаем скрипт***********************/
-},{"./gallery-items":"src/js/gallery-items.js","./variables":"src/js/variables.js"}],"src/index.js":[function(require,module,exports) {
-"use strict";
 
-var _createImgCardMockup = require("./js/createImgCardMockup");
-
-// import lazySizes from "/lazysizes";
-var imageCard = (0, _createImgCardMockup.createImageCardMockup)(images);
-variables.galleryContainer.insertAdjacentHTML("beforeend", imageCard);
 
 if ("lazyloading" in HTMLImageElement.prototype) {
   var lazyImages = document.querySelectorAll('img[loading="lazy"]');
@@ -660,6 +653,10 @@ if ("lazyloading" in HTMLImageElement.prototype) {
   script.crossOrigin = "anonymous";
   document.body.appendChild(script);
 }
+},{"./gallery-items":"src/js/gallery-items.js","./variables":"src/js/variables.js"}],"src/index.js":[function(require,module,exports) {
+"use strict";
+
+var _createImgCardMockup = require("./js/createImgCardMockup");
 },{"./js/createImgCardMockup":"src/js/createImgCardMockup.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -688,7 +685,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60109" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60674" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
