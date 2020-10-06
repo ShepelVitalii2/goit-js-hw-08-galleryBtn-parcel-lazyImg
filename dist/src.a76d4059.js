@@ -13,4 +13,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./gallery-items":"q5Rn","./variables":"u9EY"}],"Focm":[function(require,module,exports) {
 "use strict";var e=r(require("./js/createImgCardMockup"));function r(e){return e&&e.__esModule?e:{default:e}}
 },{"./js/createImgCardMockup":"A2OQ"}]},{},["Focm"], null)
-//# sourceMappingURL=/ShepelVitalii2/goit-js-hw-08-galleryBtn-parcel-lazyImg/src.a76d4059.js.map
+//# sourceMappingURL=/goit-js-hw-08-galleryBtn-parcel-lazyImg/src.a76d4059.js.map
